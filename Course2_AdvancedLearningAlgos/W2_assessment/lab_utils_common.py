@@ -40,6 +40,23 @@ def sigmoid(z):
 
     return g
 
+def relu(z):
+    """
+    ReLU of z
+
+    Parameters
+    ----------
+    z : array_like
+        A scalar or numpy array of any size
+        
+    Returns
+    -------
+     g : array_like
+         ReLU(z)
+    """
+    g = max(0,z)
+    return g
+
 ##########################################################
 # Regression Routines
 ##########################################################
